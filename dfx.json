@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "rt_backend": {
+      "candid": "src/rt_backend/rt_backend.did",
+      "package": "rt_backend",
+      "type": "rust"
+    },
+    "rt_frontend": {
+      "dependencies": [
+        "rt_backend"
+      ],
+      "source": [
+        "src/rt_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "rt_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
