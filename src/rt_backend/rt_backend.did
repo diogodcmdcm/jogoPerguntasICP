@@ -1,3 +1,5 @@
 service : {
-    "greet": (text) -> (text) query;
+    "get_pergunta": (nat64) -> (text) query;
+    "get_respostas": (nat64) -> (text) query;
+    "validar_resposta": (nat64, nat64) -> (text) query;    
 }
